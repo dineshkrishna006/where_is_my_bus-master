@@ -3,15 +3,14 @@ import { Label } from "@/components/ui/label";
 import colleges from "@/lib/utils";
 import { Button } from "./ui/button";
 import Link from "next/link";
-import { SelectCollege } from "./SelectCollege";
-
+import { Selectcollege } from "./Selectcollege";
 export function Signup() {
   return (
     <div className="grid relative w-full max-w-sm items-center gap-[1rem]">
       <Label htmlFor="mobilenumber" className=" text-[#3D408A]">
         College Name
       </Label>
-      <SelectCollege />
+      <Selectcollege />
       <Label htmlFor="mobilenumber" className=" text-[#3D408A]">
         Mobile Number
       </Label>
@@ -34,11 +33,20 @@ export function Signup() {
         className="focus:outline-[#3D408A]"
       />
 
-      <Button variant={"blueg"} size={"blueg"} onClick={()=>console.log("Clicked")}>
+      <Button
+        variant={"blueg"}
+        size={"blueg"}
+        onClick={() => console.log("Clicked")}
+      >
         Sign Up
       </Button>
       <div className="center p-4">
-        <p className="text-sm">Are you an Administrator?<span className="text-[#3D408A] underline">Login <Link href="/admin">Here</Link></span></p>
+        <p className="text-sm">
+          Are you an Administrator?
+          <span className="text-[#3D408A] underline">
+            Login <Link href="/admin">Here</Link>
+          </span>
+        </p>
       </div>
     </div>
   );
