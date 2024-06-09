@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import { Signup } from "@/components/Signup";
 export default function Home() {
   return (
-    <div className="flex md:hidden flex-col relative min-h-[100vh]">
+    <div className="flex md:hidden flex-col relative min-h-screen">
       <Navbar />
       <div className="flex flex-col items-start mt-[80px] p-[1.5rem] ">
         <p className=" font-semibold text-[#919191] text-xl">
