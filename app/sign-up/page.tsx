@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex md:hidden flex-col relative min-h-screen">
       <Navbar />
-      <div className="flex flex-col items-start mt-[80px] p-[1.5rem] ">
+      <div className="flex flex-col items-start mt-[4rem] p-[1.5rem] ">
         <p className=" font-semibold text-[#919191] text-xl">
           Let{"'"}s Get Started!
         </p>
